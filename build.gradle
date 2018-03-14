@@ -28,3 +28,11 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+version = '1.0.20180315'
+
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name, 'Implementation-Version': project.version)
+    }
+}
