@@ -110,7 +110,7 @@ public class ExecutorUtils {
         return null;
     }
 
-    public static Future<?> submit(Callable<?> task) {
+    public static <T> Future<T> submit(Callable<T> task) {
         if (task != null) {
             return _executor.submit(task);
         }
