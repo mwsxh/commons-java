@@ -20,7 +20,9 @@ dependencies {
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:23.0'
-    implementation 'org.projectlombok:lombok:1.16.20'
+
+    annotationProcessor 'org.projectlombok:lombok:1.16.20'
+    compileOnly 'org.projectlombok:lombok:1.16.20'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
